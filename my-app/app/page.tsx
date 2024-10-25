@@ -159,7 +159,6 @@ const Page = () => {
           </motion.p>
         </motion.div>
 
-        {/* Bottom footer section */}
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -167,14 +166,12 @@ const Page = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center px-4 sm:px-10 gap-4 sm:gap-0"
         >
-          {/* Language selector */}
           <div className="text-center sm:text-left sm:w-1/3">
             <motion.h1 whileHover={{ scale: 1.05 }} className="text-white text-sm sm:text-xl">
               <p >English</p>
             </motion.h1>
           </div>
 
-          {/* Social media links */}
           <div className="flex justify-center sm:w-1/3 gap-4 sm:gap-8">
             <motion.p whileHover={{ scale: 1.2 }}  className="text-white text-sm sm:text-xl">
               FB
@@ -190,7 +187,6 @@ const Page = () => {
             </motion.p>
           </div>
 
-          {/* Copyright */}
           <div className="sm:w-1/3 text-white text-center sm:text-right">
             <motion.p 
               whileHover={{ scale: 1.05 }} 
