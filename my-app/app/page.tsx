@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className=" bg-black w-full h-[565px]">
+      <div className=" bg-black w-full h-[400px] ">
         <div className="flex justify-center items-center   text-wrap  ">
           <div className="p-10">
             <h1 className="text-white text-3xl font-bold  leading-3">Boss</h1>
@@ -32,16 +32,17 @@ const page = () => {
             {/* </div> */}
           </div>
 
-<div className="flex  items-center  p-10 ">
+<div className="flex  items-center  p-10  justify-around">
 
 
-<div className="text-left">
+<div className="text-left   w-full">
         <h1 className="text-white text-xl">
-            English
+          <a href="">English</a>
+            
           </h1>  
           
           </div>
-          <div className="flex text-center justify-center items-center  ml-10 gap-10">
+          <div className="flex w-full  justify-center items-left  m-10 gap-10">
             {/* <div className='p-10'> */}
             <a href="" className="text-white text-xl   ">
               FB
@@ -59,10 +60,12 @@ const page = () => {
             {/* </div> */}
           </div>
 
-          
-          <h1 className="text-white text-xl">
+       <div className=" w-full text-white text-right">
+        
+          <h1 className="text-white  text-xl">
           BOSS SHOES © All right Reserved
           </h1> 
+        </div>   
 </div>
         </div>
       </div>
