@@ -110,7 +110,6 @@ const Page = () => {
         <div className="" />
       </motion.div>
 
-      {/* Footer section */}
       <motion.div 
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -118,7 +117,6 @@ const Page = () => {
         transition={{ duration: 0.8 }}
         className="bg-black w-full py-8 sm:py-12 z-1 absolute"
       >
-        {/* Logo */}
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -137,7 +135,6 @@ const Page = () => {
           </div>
         </motion.div>
 
-        {/* Navigation links */}
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
