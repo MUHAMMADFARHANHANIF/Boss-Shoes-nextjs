@@ -145,18 +145,18 @@ const Page = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-wrap justify-center items-center px-4 sm:px-10 gap-4 sm:gap-8 mb-6 sm:mb-10"
         >
-          <motion.a whileHover={{ scale: 1.05 }} href="" className="text-white text-sm sm:text-xl leading-3">
+          <motion.p whileHover={{ scale: 1.05 }}  className="text-white text-sm sm:text-xl leading-3">
             Terms of Service
-          </motion.a>
-          <motion.a whileHover={{ scale: 1.05 }} href="" className="text-white text-sm sm:text-xl leading-3">
+          </motion.p>
+          <motion.p whileHover={{ scale: 1.05 }}  className="text-white text-sm sm:text-xl leading-3">
             Privacy Policy
-          </motion.a>
-          <motion.a whileHover={{ scale: 1.05 }} href="" className="text-white text-sm sm:text-xl leading-3">
+          </motion.p>
+          <motion.p whileHover={{ scale: 1.05 }}  className="text-white text-sm sm:text-xl leading-3">
             Security
-          </motion.a>
-          <motion.a whileHover={{ scale: 1.05 }} href="" className="text-white text-sm sm:text-xl leading-3">
+          </motion.p>
+          <motion.p whileHover={{ scale: 1.05 }}  className="text-white text-sm sm:text-xl leading-3">
             FAQ
-          </motion.a>
+          </motion.p>
         </motion.div>
 
         {/* Bottom footer section */}
@@ -170,36 +170,36 @@ const Page = () => {
           {/* Language selector */}
           <div className="text-center sm:text-left sm:w-1/3">
             <motion.h1 whileHover={{ scale: 1.05 }} className="text-white text-sm sm:text-xl">
-              <a href="">English</a>
+              <p >English</p>
             </motion.h1>
           </div>
 
           {/* Social media links */}
           <div className="flex justify-center sm:w-1/3 gap-4 sm:gap-8">
-            <motion.a whileHover={{ scale: 1.2 }} href="" className="text-white text-sm sm:text-xl">
+            <motion.p whileHover={{ scale: 1.2 }}  className="text-white text-sm sm:text-xl">
               FB
-            </motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} href="" className="text-white text-sm sm:text-xl">
+            </motion.p>
+            <motion.p whileHover={{ scale: 1.2 }}  className="text-white text-sm sm:text-xl">
               TW
-            </motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} href="" className="text-white text-sm sm:text-xl">
+            </motion.p>
+            <motion.p whileHover={{ scale: 1.2 }}  className="text-white text-sm sm:text-xl">
               LI
-            </motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} href="" className="text-white text-sm sm:text-xl">
+            </motion.p>
+            <motion.p whileHover={{ scale: 1.2 }}  className="text-white text-sm sm:text-xl">
               IN
-            </motion.a>
+            </motion.p>
           </div>
 
           {/* Copyright */}
           <div className="sm:w-1/3 text-white text-center sm:text-right">
-            <motion.a 
+            <motion.p 
               whileHover={{ scale: 1.05 }} 
-              href=""
+              
             >
               <h1 className="text-white text-sm sm:text-xl">
                 BOSS SHOES © All rights Reserved
               </h1>
-            </motion.a>
+            </motion.p>
           </div>
         </motion.div>
       </motion.div>
