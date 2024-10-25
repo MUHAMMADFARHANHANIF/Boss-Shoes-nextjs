@@ -2,10 +2,15 @@ import React from "react";
 
 const Page = () => {
   return (
-    <>
-      <div className="bg-blue-500 w-full min-h-screen  justify-center items-start p-4 sm:p-10">
-        <div className="text-center">
-          <h1 className="text-white text-2xl sm:text-3xl font-bold leading-tight">
+      <>
+      <div className="w-full h-screen absolute overflow-hidden">
+
+      <div className="bg-blue-100 bg-blue-200 bg-opacity-30 backdrop-filter  -rotate-45 w-[719.55px] h-[1500.05px] absolute z-[0] overflow-hidden" style={{top: '-600px', right: '-220px'}}>
+      </div>
+      </div>
+      <div className="bg-[#77C0E9]  w-full min-h-screen   justify-center items-start p-4 sm:p-10 z-[10]">
+        <div className="text-center  z-2">
+          <h1 className="text-white text-2xl sm:text-3xl font-bold leading-tight z-10">
             What Our Happy
             <br />
             Customer Says
@@ -14,10 +19,10 @@ const Page = () => {
         <hr className="w-32  mx-auto mt-5"/>
         <div className="text-center mt-5">
           <h1 className="text-white text-lg sm:text-xl font-bold leading-tight">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          <br /> eiusmod tempor incididunt ut labore et dolore
-           magna aliqua            
-            Customer Says
+          We value our customers' feedback and strive to
+           provide the best experience possible.
+           <br />
+          Here's what our happy customers have to say
           </h1>
         </div>
 
@@ -54,7 +59,7 @@ const Page = () => {
       </div>
 
       {/* Footer section */}
-      <div className="bg-black w-full py-8 sm:py-12">
+      <div className="bg-black w-full py-8 sm:py-12 z-1 absolute">
         {/* Logo */}
         <div className="flex justify-center items-center text-wrap mb-6 sm:mb-10">
           <div className="leading-tight  ">
