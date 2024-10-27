@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import roundDivHead from './asset/roundDivHead.png';
 import headerLeagShoes from './asset/headerLeagShoes.png';
 import leftArrow from './asset/leftarrow.png';
@@ -28,8 +28,20 @@ import image5 from './asset/Group 9.png';
 import image6 from './asset/Group 10.png';
 
 const Page = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
     <React.Fragment>
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-2 bg-blue-500 origin-left z-50"
+        style={{ scaleX }}
+      />
+      
       <motion.nav
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -76,7 +88,13 @@ const Page = () => {
         </div>
       </motion.nav>
 
-      <main id='home' className="relative w-full mt-[-20px]">
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        id='home'
+        className="relative w-full mt-[-20px]"
+      >
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -88,8 +106,8 @@ const Page = () => {
         ></motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Image
@@ -102,7 +120,7 @@ const Page = () => {
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="relative w-full text-[28vw] bottom-[190px] lg:bottom-[92vh] md:bottom-[40vh] font-bold text-center"
         >
           BIGAIR
@@ -219,7 +237,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
