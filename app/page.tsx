@@ -27,6 +27,11 @@ import image4 from './asset/Group 8.png';
 import image5 from './asset/Group 9.png';
 import image6 from './asset/Group 10.png';
 
+
+
+import manimage from './asset/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.avif';
+
+
 const Page = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -60,7 +65,7 @@ const Page = () => {
             <p className=' ml-5 hidden md:inline-block text-sm sm:text-base cursor-pointer '>HOME</p>
           </Link>
           <Link href={'#product'}>
-            <p className='  cursor-pointer hidden md:inline-block text-sm sm:text-base'>OUR PRODUCT'S</p>
+            <p className='  cursor-pointer hidden md:inline-block text-sm sm:text-base'>OUR PRODUCTS</p>
           </Link>
           <Image
             src={shoppingBagNavbar}
@@ -245,7 +250,7 @@ const Page = () => {
         transition={{ duration: 0.8 }}
         className="flex m-auto items-center mt-16 flex-col gap-3 justify-around"
       >
-        <h4 className="text-2xl sm:text-4xl font-semibold">Our Product's</h4>
+        <h4 className="text-2xl sm:text-4xl font-semibold">Our Products</h4>
         <div className="border w-20"></div>
       </motion.div>
 
@@ -429,10 +434,10 @@ const Page = () => {
             className="text-center mt-5"
           >
             <h1 className="text-white text-lg sm:text-xl font-bold leading-tight">
-              We value our customers' feedback and strive to
+              We value our customers feedback and strive to
               provide the best experience possible.
               <br />
-              Here's what our happy customers have to say
+              Here what our happy customers have to say
             </h1>
           </motion.div>
 
@@ -444,8 +449,8 @@ const Page = () => {
           >
             <div className="bg-blue-200 bg-opacity-30 backdrop-filter backdrop-blur-md w-full md:w-1/3 h-auto md:h-60 rounded-2xl p-5">
               <div className="flex justify-between items-center mb-4">
-                <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM=" alt="testimonial" className="w-12 h-12 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
-                <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-message-icon-for-your-project-png-image_5214044.jpg" alt="testimonial" className="w-10 h-10 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
+              <Image width={48} height={48} alt='profile' src={manimage} className="w-12 h-12 rounded-full cursor-pointer hover:scale-110 transition-all duration-300"/>
+              <Image width={40} height={40} alt='text' className='w-10 h-10 rounded-full cursor-pointer hover:scale-110 transition-all duration-300' src={'https://png.pngtree.com/png-clipart/20200224/original/pngtree-message-icon-for-your-project-png-image_5214044.jpg'  }/>
               </div>
               <p className="text-sm font-semibold mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -456,9 +461,9 @@ const Page = () => {
               </div>
             </div>
             <div className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-md w-full md:w-1/3 h-auto md:h-60 rounded-2xl p-5">
-              <div className="flex justify-between items-center mb-4">
-                <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM=" alt="testimonial" className="w-12 h-12 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
-                <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-message-icon-for-your-project-png-image_5214044.jpg" alt="testimonial" className="w-10 h-10 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
+            <div className="flex justify-between items-center mb-4">
+              <Image width={48} height={48} alt='profile' src={manimage} className="w-12 h-12 rounded-full cursor-pointer hover:scale-110 transition-all duration-300"/>
+              <Image width={40} height={40} alt='text' className='w-10 h-10 rounded-full cursor-pointer hover:scale-110 transition-all duration-300' src={'https://png.pngtree.com/png-clipart/20200224/original/pngtree-message-icon-for-your-project-png-image_5214044.jpg'  }/>
               </div>
               <p className="text-sm font-semibold mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
