@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 #MainDivFirstDiv {
-  border-top-left-radius: 50px; 
-  border-bottom-left-radius: 50px; 
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 
@@ -12,6 +12,5 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
-
