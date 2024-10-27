@@ -1,3 +1,6 @@
+Here a figma link [Figma](https://www.figma.com/design/0qHX3kgOQaavUDiawc4Gt6/Interactive-Website-Design-in-Figma%3A-UI-Design-Tutorial-for-Beginners-(Community)?node-id=0-1&node-type=canvas&t=OEVj5zdV3rqh5SKf-0)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
