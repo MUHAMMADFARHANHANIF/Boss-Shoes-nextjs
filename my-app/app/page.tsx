@@ -205,9 +205,9 @@ const page = () => {
           }}
         ></div>
 
-        <Products />
-        <Products />
-        <Products />
+        <Products img1={singleProductShoe} />
+        <Products img2={singleProductShoe} />
+        <Products img3={singleProductShoe} />
 
         <div className="flex items-center mt-20 flex-col gap-3 justify-center">
           <h4 className="text-2xl sm:text-4xl font-semibold">Our Product Quality</h4>
