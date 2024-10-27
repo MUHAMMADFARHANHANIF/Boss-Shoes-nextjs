@@ -49,12 +49,11 @@ const Page = () => {
         className='sm:py-[50px] py-[20px] flex items-center justify-between absolute w-full top-1'
       >
         <Image
-          src={logo} // main logo
+          src={logo}
           className='sm:ml-[49px] ml-[30px] mr-5 sm:w-[96.41px] sm:h-[33px] w-[50px] h-[20.96px]' // Responsive positioning
           width={96.41}
           height={42.96}
           alt='logo'
-        // Responsive sizing
         />
         <div id='MainDivFirstDiv' className='md:w-[600px] sm:w-[400px] w-[100px] z-20 sm:h-16 h-10 bg-[rgb(139,201,236)] bg-opacity-60 backdrop-blur-sm flex items-center justify-between'>
           <Link href={'#home'}>
@@ -250,7 +249,6 @@ const Page = () => {
         <div className="border w-20"></div>
       </motion.div>
 
-      {/* Product Section with Background Image */}
       <div className="relative w-[90vw] h-auto sm:h-[277vh]">
         <div className='ml-[10%] w-full sm:w-full overflow-hidden sm:h-full  '
           style={{
@@ -480,7 +478,6 @@ const Page = () => {
         transition={{ duration: 0.8 }}
         className="bg-black h-96 mt-10 overflow-hidden bottom-0 text-white w-full py-6 sm:py-10"
       >
-        {/* Logo */}
         <div className="flex justify-center items-center mb-6 sm:mb-10">
           <div className="text-center mt-12">
             <h1 className="text-2xl sm:text-3xl font-bold">
@@ -490,7 +487,6 @@ const Page = () => {
           </div>
         </div>
 
-        {/* Navigation links */}
         <nav className="flex flex-wrap justify-center items-center px-4 sm:px-10 gap-4 sm:gap-8 mb-6 sm:mb-10">
           <a href="#" className="text-sm sm:text-base hover:underline">Terms of Service</a>
           <a href="#" className="text-sm sm:text-base hover:underline">Privacy Policy</a>
@@ -498,9 +494,7 @@ const Page = () => {
           <a href="#" className="text-sm sm:text-base hover:underline">FAQ</a>
         </nav>
 
-        {/* Bottom footer section */}
         <div className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-10 gap-4 sm:gap-0">
-          {/* Language selector */}
           <div className="text-center sm:text-left">
             <select className="bg-black text-white text-sm sm:text-base border border-white rounded px-2 py-1">
               <option>English</option>
@@ -509,7 +503,6 @@ const Page = () => {
             </select>
           </div>
 
-          {/* Social media links */}
           <div className="flex justify-center gap-4 sm:gap-6">
             <a href="#" className="text-sm sm:text-base hover:text-gray-300">FB</a>
             <a href="#" className="text-sm sm:text-base hover:text-gray-300">TW</a>
@@ -517,7 +510,6 @@ const Page = () => {
             <a href="#" className="text-sm sm:text-base hover:text-gray-300">IN</a>
           </div>
 
-          {/* Copyright */}
           <div className="text-center sm:text-right">
             <p className="text-sm sm:text-base">
               BOSS SHOES © All rights Reserved
