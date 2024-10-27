@@ -240,10 +240,11 @@ const Page = () => {
       </motion.main>
 
       <motion.div
+      id='product'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex items-center mt-16 flex-col gap-3 justify-center"
+        className="flex m-auto items-center mt-16 flex-col gap-3 justify-around"
       >
         <h4 className="text-2xl sm:text-4xl font-semibold">Our Product's</h4>
         <div className="border w-20"></div>
@@ -265,7 +266,7 @@ const Page = () => {
           }}
         ></div>
 
-        <div className='w-full justify-center flex flex-col b items-center'>
+        <div  className='w-full justify-center flex flex-col b items-center'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
